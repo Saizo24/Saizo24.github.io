@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Styling for all pages */
+
+* {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+/* Styling for body */
+
+body {
+  max-width: 100%;
+  background-color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(10, 61, 85);
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  background-color: rgb(10, 61, 85);
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  z-index: 9999;
+  color: rgb(120, 165, 184);
+}
+
+header * {
+  z-index: 9999;
+  position: relative;
+}
+
+header select {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+header a {
+  margin: 0% 2%;
+}
+
+main {
+  margin-bottom: 50px;
+  background-color: white
+}
+
+.content {
+  margin-top: 20%;
+}
+
+.content {
+  background-color: rgb(10, 61, 85);
+  padding: 50px 0px;
+}
+
+.navigation {
+
+  z-index: 99999;
+  transform: translateY(20px);
+  display: flex;
+  align-items: right;
+  float: right;
+}
+
+.navigation > * {
+  margin: 0 4%;
+}
+
+.navbar {
+ 
+  border: 1px solid rgb(10, 61, 85);
+  border-radius: 5px;
+}
+
+.logo {
+  transform: translateY(20px);
+  position: relative;
+  min-height: 75px;
+  min-width: 75px;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  padding: 4px 4px;
+  background-color: rgb(120, 165, 184);
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in;
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: white;
+}
+
+main {
+  position: relative;
+}
+
+.upButton {
+  position: fixed;
+  background-color: rgb(120, 165, 184);
+  color: rgb(10, 61, 85);
+  border-color: rgb(10, 61, 85);
+  bottom: 5%;
+  right: 5%;
+  z-index: 9999;
+  transition: background-color 0.2s ease-in;
+}
+
+.upButton:hover,
+.upButton:focus {
+  background-color: white;
+  border-color: rgb(10, 61, 85);
+  color: rgb(10, 61, 85);
+}
+
+.title-fixed {
+  position: absolute;
+  color: white;
+  top: 40vh;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  white-space: nowrap;
+  background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    margin: 100px 0px 150px 0px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0%;
+  } 
+
+  .navbar {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content {
+    margin: 50px;
+  }
+}
+
+ 
+
+.impressum {
+  background-color: rgb(10, 61, 85);
+  color: black;
+  text-align: center;
+  white-space: normal;
+}
+
+/* Styling for text and link elements */
+
+em {
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+a {
+  transition: color 0.2s ease-in;
+}
+
+a,
+a:active {
+  color: rgb(120, 165, 184);
+  text-decoration-line: none;
+}
+
+a:focus,
+a:hover {
+  color: rgb(74, 126, 151);
+}
+
+.socialmedia-links img {
+  padding: 5px 5px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in;
+}
+
+.socialmedia-links img:hover,
+.socialmedia-links img:focus {
+  background-color: rgb(120, 165, 184);
+}
+
+select {
+  box-sizing: border-box;
+  max-width: 120px;
+  padding: 5px 2px;
+  border: 2px rgb(10, 61, 85) solid;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(120, 165, 184);
+  transition: border-color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+select:hover,
+select:focus {
+  border: 2px white solid;
+  background-color: white;
+}
